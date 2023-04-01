@@ -15,9 +15,9 @@
     </head>
 
     <body class="bg-gray-200">
-        <div class="flex">
+        <div class="flex flex-wrap">
             <!-- Sidebar -->
-            <aside class="bg-indigo-900 min-h-screen hidden md:block">
+            <aside id="sidebar" class="bg-indigo-900 min-h-screen min-w-[260px] hidden md:block">
                 <!-- Logo -->
                 <div class="p-6 bg-indigo-800">
                     <div class=" text-xl font-bold text-gray-200 uppercase ">Super Crop</div>
@@ -71,9 +71,9 @@
             <!-- Main content -->
             <main class="flex-1">
                 <!-- Topbar Menu -->
-                <nav class="flex items-center justify-between bg-white shadow-sm px-4 py-2">
+                <nav class="flex items-center justify-between bg-white shadow-sm px-4 py-2 md:justify-end">
                     <!-- Sidebar Toggler Button -->
-                    <button id="menuToggler" class="text-indigo-500 text-2xl">
+                    <button id="menuToogler" class="text-indigo-500 text-2xl md:hidden">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
 
@@ -97,6 +97,9 @@
                 </nav>
             </main>
         </div>
+
+        <!-- Custom JS -->
+        <script src="js/index.js"></script>
     </body>
 
 </html>

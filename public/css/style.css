@@ -561,6 +561,22 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -589,12 +605,28 @@ video {
   width: 2rem;
 }
 
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.min-w-\[260px\] {
+  min-width: 260px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -731,5 +763,13 @@ video {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 }
