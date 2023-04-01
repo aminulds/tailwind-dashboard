@@ -9,4 +9,7 @@
 	.menuText {
 		@apply text-sm text-gray-100 font-bold transition duration-200;
 	}
+	.topBarButton {
+		@apply flex items-center justify-center w-8 h-8 p-1 rounded-full bg-gray-100 shadow hover:shadow-lg;
+	}
 }

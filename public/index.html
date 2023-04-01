@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard with Tailwindcss</title>
 
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- Main Style -->
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -14,7 +17,7 @@
     <body class="bg-gray-200">
         <div class="flex">
             <!-- Sidebar -->
-            <aside class="bg-indigo-900 hidden md:block">
+            <aside class="bg-indigo-900 min-h-screen hidden md:block">
                 <!-- Logo -->
                 <div class="p-6 bg-indigo-800">
                     <div class=" text-xl font-bold text-gray-200 uppercase ">Super Crop</div>
@@ -66,8 +69,32 @@
             </aside>
 
             <!-- Main content -->
-            <main>
-                main content
+            <main class="flex-1">
+                <!-- Topbar Menu -->
+                <nav class="flex items-center justify-between bg-white shadow-sm px-4 py-2">
+                    <!-- Sidebar Toggler Button -->
+                    <button id="menuToggler" class="text-indigo-500 text-2xl">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+
+                    <!-- Top Right -->
+                    <div class="flex items-center space-x-5">
+                        <button class="topBarButton">
+                            <img src="images/search.png" alt="search">
+                        </button>
+                        <button class="topBarButton">
+                            <img src="images/message.png" alt="message">
+                        </button>
+                        <button class="topBarButton">
+                            <img src="images/warning.png" alt="warning">
+                        </button>
+
+                        <!-- User -->
+                        <button class="w-8 h-8">
+                            <img src="images/person.png" alt="person">
+                        </button>
+                    </div>
+                </nav>
             </main>
         </div>
     </body>
