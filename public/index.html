@@ -7,12 +7,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard with Tailwindcss</title>
 
-        <!-- Style -->
+        <!-- Main Style -->
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
-        <h1 class="bg-indigo-400 text-white text-center">Tailwindcss</h1>
+    <body class="bg-gray-200">
+        <div class="flex">
+            <!-- Sidebar -->
+            <aside class="bg-indigo-900 hidden md:block">
+                <!-- Logo -->
+                <div class="p-6 bg-indigo-800">
+                    <div class=" text-xl font-bold text-gray-200 uppercase ">Super Crop</div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <div class="p-6 flex flex-col space-y-5">
+                    <div class="text-gray-200 text-xs font-bold uppercase">Page</div>
+
+                    <!-- Manu Wraper -->
+                    <div class="flex flex-col space-y-5">
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/dashboard.png" alt="dashboard" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Dashboard</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/customers.png" alt="customers" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Customer</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/orders.png" alt="orders" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Orders</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/campaign.png" alt="campaign" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Campaign</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/messages.png" alt="messages" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Messages</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/apps.png" alt="apps" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Apps</div>
+                        </a>
+                        <!-- item -->
+                        <a href="#" class="menuLink group">
+                            <img src="images/settings.png" alt="settings" class="w-6 h-6 transition duration-200 group-hover:opacity-80">
+                            <div class="menuText group-hover:text-gray-300">Settings</div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main>
+                main content
+            </main>
+        </div>
     </body>
 
 </html>
