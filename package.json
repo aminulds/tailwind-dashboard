@@ -1,0 +1,24 @@
+{
+	"name": "tailwind-dashboard",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tailwindcss -i ./src/input.css -o ./public/css/style.css",
+		"watch": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aminulds/tailwind-dashboard.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/aminulds/tailwind-dashboard/issues"
+	},
+	"homepage": "https://github.com/aminulds/tailwind-dashboard#readme",
+	"devDependencies": {
+		"tailwindcss": "^3.3.1"
+	}
+}
