@@ -103,14 +103,84 @@
                 <!-- Main Content Wraper -->
                 <div class="m-6">
                     <!-- Welcome Banner -->
-                    <div class="bg-indigo-300 p-4 mb-6">
+                    <div class="bg-indigo-300 p-4 mb-6 rounded">
                         <h3 class="text-2xl mb-2 font-bold text-gray-700">Good Morning, Aminul 👋</h3>
                         <p class="text-gray-600">Here is what's happening with your project.</p>
+                    </div>
+
+                    <!-- Card Container -->
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <!-- Salse Card -->
+                        <div class="bg-white p-4 rounded">
+                            <img src="images/wallet.png" alt="wallet" class="w-10 h-10">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-bold text-gray-700 mb-2">Super Plus</span>
+                                <span class="text-sm uppercase font-medium text-gray-500">Sales</span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="text-2xl font-bold text-gray-800">$18,750</span>
+                                <span class="bg-green-500 text-white rounded-full align-text-top text-sm font-bold p-1">+29%</span>
+                            </div>
+
+                            <!-- Chart -->
+                            <canvas id="salesChart" class="mt-3"></canvas>
+                        </div>
+
+                        <!-- Purchase Card -->
+                        <div class="bg-white p-4 rounded">
+                            <img src="images/wallet.png" alt="wallet" class="w-10 h-10">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-bold text-gray-700 mb-2">Super Plus</span>
+                                <span class="text-sm uppercase font-medium text-gray-500">Sales Return</span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="text-2xl font-bold text-gray-800">$15,750</span>
+                                <span class="bg-red-500 text-white rounded-full align-text-top text-sm font-bold p-1">+17%</span>
+                            </div>
+
+                            <!-- Chart -->
+                            <canvas id="purchaseChart" class="mt-3"></canvas>
+                        </div>
+
+                        <!-- Purchase Card -->
+                        <div class="bg-white p-4 rounded">
+                            <img src="images/wallet.png" alt="wallet" class="w-10 h-10">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-bold text-gray-700 mb-2">Super Plus</span>
+                                <span class="text-sm uppercase font-medium text-gray-500">Sales Return</span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="text-2xl font-bold text-gray-800">$15,750</span>
+                                <span class="bg-red-500 text-white rounded-full align-text-top text-sm font-bold p-1">+17%</span>
+                            </div>
+
+                            <!-- Chart -->
+                            <canvas id="pieChart" class="mt-3"></canvas>
+                        </div>
+
+                        <!-- Purchase Card -->
+                        <div class="bg-white p-4 rounded">
+                            <img src="images/wallet.png" alt="wallet" class="w-10 h-10">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-bold text-gray-700 mb-2">Super Plus</span>
+                                <span class="text-sm uppercase font-medium text-gray-500">Sales Return</span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="text-2xl font-bold text-gray-800">$15,750</span>
+                                <span class="bg-red-500 text-white rounded-full align-text-top text-sm font-bold p-1">+17%</span>
+                            </div>
+
+                            <!-- Chart -->
+                            <canvas id="polarArea" class="mt-3"></canvas>
+                        </div>
                     </div>
                 </div>
             </main>
         </div>
 
+
+        <!-- Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <!-- Custom JS -->
         <script src="js/index.js"></script>
     </body>
