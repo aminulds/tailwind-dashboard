@@ -1,12 +1,15 @@
 const sidebar = document.getElementById('sidebar')
 const menuToogler = document.getElementById('menuToogler')
 const closeButton = document.getElementById('closeButton')
+const topMenu = document.getElementById('topMenu')
 
 
 const menuToogle = () => {
     sidebar.classList.toggle('block')
     sidebar.classList.toggle('hidden')
+    sidebar.classList.toggle('fixed')
 }
+
 
 menuToogler.addEventListener('click', menuToogle)
 closeButton.addEventListener('click', menuToogle)

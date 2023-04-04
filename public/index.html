@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard with Tailwindcss</title>
 
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -15,14 +18,14 @@
     </head>
 
     <body class="bg-gray-200">
-        <div class="flex flex-wrap">
+        <div class="relative flex flex-wrap">
             <!-- Sidebar -->
-            <aside id="sidebar" class="bg-indigo-900 min-h-screen min-w-[260px] hidden md:block">
+            <aside id="sidebar" class="bg-indigo-900 h-auto min-w-[260px] mt-12 hidden">
                 <!-- Logo -->
                 <div class="px-4 py-2 bg-indigo-800 flex items-center justify-between">
                     <div class=" text-xl font-bold text-gray-200 uppercase ">Super Crop</div>
 
-                    <button id="closeButton" class="text-red-500 text-2xl md:hidden">
+                    <button id="closeButton" class="text-red-500 text-2xl">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
@@ -75,9 +78,9 @@
             <!-- Main content -->
             <main class="flex-1">
                 <!-- Topbar Menu -->
-                <nav class="flex items-center justify-between bg-white shadow-sm px-4 py-2 md:justify-end">
+                <nav id="topMenu" class="fixed w-full flex items-center justify-between bg-white shadow-sm px-4 py-2">
                     <!-- Sidebar Toggler Button -->
-                    <button id="menuToogler" class="text-indigo-500 text-2xl md:hidden">
+                    <button id="menuToogler" class="text-indigo-500 text-2xl">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
 
@@ -101,7 +104,7 @@
                 </nav>
 
                 <!-- Main Content Wraper -->
-                <div class="m-6">
+                <div class="m-6 mt-[72px]">
                     <!-- Welcome Banner -->
                     <div class="bg-indigo-300 p-4 mb-6 rounded">
                         <h3 class="text-2xl mb-2 font-bold text-gray-700">Good Morning, Aminul 👋</h3>
