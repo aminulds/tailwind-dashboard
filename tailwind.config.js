@@ -7,7 +7,14 @@ module.exports = {
 
   theme: {
     extend: {
+      colors: {
 
+        // social color
+        youtube: '#FF0000',
+        facebook: '#4267B2',
+        pinterest: '#E60023',
+        twitter: '#1DA1F2',
+      }
     },
   },
   plugins: [],
